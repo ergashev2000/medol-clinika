@@ -35,6 +35,10 @@ export default function Partners() {
       slidesPerView: 2,
       spaceBetween: 40,
     },
+    1600: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
   };
   return (
     <>

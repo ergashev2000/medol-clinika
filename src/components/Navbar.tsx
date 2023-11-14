@@ -60,7 +60,7 @@ export default function Navbar() {
         <div className="flex items-center justify-evenly w-[50%] max-lg:order-3 gap-3 max-md:w-auto">
           <div className="bg-white flex items-center rounded-full relative z-50 max-md:hidden">
             <button
-              className="bg-white w-12 h-12 max-lg:w-10 max-lg:h-10 rounded-full flex justify-center items-center z-10"
+              className="bg-white w-10 h-10 max-lg:w-10 max-lg:h-10 rounded-full flex justify-center items-center z-10"
               onClick={handleOpenSearch}
             >
               <Image src={SearchIcon} alt="Search icon" />
@@ -69,7 +69,7 @@ export default function Navbar() {
               type="text"
               id="search"
               placeholder="Поиск по сайту"
-              className={`rounded-full h-12 pl-14 absolute left-0 transition-all duration-500 ${
+              className={`rounded-full h-10 pl-14 absolute left-0 transition-all duration-500 ${
                 isOpenSearch ? "w-[500px] max-lg:w-[200px]" : "w-0 opacity-0"
               }`}
             />
@@ -78,7 +78,7 @@ export default function Navbar() {
           <Link
             href={"https://facebook.com/"}
             target="_blank"
-            className="flex items-center justify-center gap-3 bg-white h-10 max-lg:h-10 max-lg:w-10 rounded-full shadow px-3"
+            className="flex items-center justify-center gap-3 bg-white py-2 max-lg:h-10 max-lg:w-10 rounded-full shadow px-3"
           >
             <div className=" flex justify-center items-center">
               <Image src={FacebookIcon} alt="Facebook icon" />

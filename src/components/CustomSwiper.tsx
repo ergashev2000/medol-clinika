@@ -32,6 +32,10 @@ const CustomSwiper = () => {
       slidesPerView: 2,
       spaceBetween: 40,
     },
+    1600: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
   };
   return (
     <Swiper

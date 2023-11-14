@@ -3,6 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import MapIcon from "@/assets/icons/map-icon.svg";
+import Email from "@/assets/icons/email.svg";
+import Phone from "@/assets/icons/phone-icon.svg";
 import Logo from "@/assets/images/logo.svg";
 import Button from "@/components/ui/Button";
 import { useModal } from "./CreateContext";
@@ -16,7 +18,13 @@ export default function Footer() {
     <footer>
       <div className="py-10 flex justify-between  gap-10 px-5">
         <div className="w-1/2 flex flex-col gap-5 max-lg:flex-col max-lg:w-full">
-          <Image src={Logo} alt="Logo" width={150} height={150} className="hidden max-md:block"/>
+          <Image
+            src={Logo}
+            alt="Logo"
+            width={150}
+            height={150}
+            className="hidden max-md:block"
+          />
 
           <div className="flex gap-3 max-lg:justify-between max-md:flex-col">
             <h4 className="font-semibold text-lg">Контакты</h4>
@@ -32,23 +40,16 @@ export default function Footer() {
 
               <div className="flex gap-3 items-center">
                 <div className="min-h-[50px] min-w-[50px]  rounded-full bg-white shadow flex justify-center items-center">
-                  <Image src={MapIcon} alt="Map Icon" width={20} height={20} />
+                  <Image src={Email} alt="Map Icon" width={20} height={20} />
                 </div>
-                <p className="text-sm">
-                  г.Ташкент, Чиланзар 10 <br /> квартал, дом 3/1
-                </p>
+                <p className="text-sm">info@medol.uz</p>
               </div>
             </div>
 
             <div className="flex flex-col gap-5">
               <div className="flex gap-3">
                 <div className="min-h-[50px] min-w-[50px] max-w-[50px] max-h-[50px] rounded-full bg-white shadow flex justify-center items-center">
-                  <Image
-                    src={MapIcon}
-                    alt="Phone Icon"
-                    width={20}
-                    height={20}
-                  />
+                  <Image src={Phone} alt="Phone Icon" width={20} height={20} />
                 </div>
                 <div className="flex flex-col gap-1 text-sm">
                   <Link href="/">+998 71 276-62-53</Link>

@@ -136,7 +136,7 @@ export default function Navbar() {
             </div>
           </div>
         </div>
-        <div className="min-w-[50px] h-10 bg-white rounded-full shadow order-4 flex justify-center items-center">
+        <div className="min-w-[50px] h-10 bg-white rounded-full shadow order-4  justify-center items-center hidden  max-lg:flex">
           <Image src={Menu} alt="Image" />
         </div>
       </div>

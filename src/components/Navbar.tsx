@@ -78,7 +78,7 @@ export default function Navbar() {
           <Link
             href={"https://facebook.com/"}
             target="_blank"
-            className="flex items-center justify-center gap-3 bg-white max-lg:h-10 max-lg:w-10 rounded-full shadow px-3"
+            className="flex items-center justify-center gap-3 bg-white h-10 max-lg:h-10 max-lg:w-10 rounded-full shadow px-3"
           >
             <div className=" flex justify-center items-center">
               <Image src={FacebookIcon} alt="Facebook icon" />
